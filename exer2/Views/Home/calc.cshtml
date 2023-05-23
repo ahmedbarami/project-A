@@ -1,0 +1,12 @@
+﻿@model Numbers
+
+<form method="post" asp-action="calc">
+
+    <input type="text" placeholder="number one"  asp-for="nOne" />
+    <input type="text" placeholder="operation" asp-for="Opertion" />
+    <input type="text" placeholder="number two" asp-for="nTwo"/>
+                       
+    <input type="submit" value="enter" />
+</form>
+
+<h2> result @ViewBag.n</h2>
